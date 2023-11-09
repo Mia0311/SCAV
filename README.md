@@ -12,7 +12,8 @@ Practice1 result
 
 Practice2 result
 
-![image](https://github.com/Mia0311/SCAV/assets/92045687/5ac69a0b-a55a-4bb7-af69-8b231ae30f23)
-![image](https://github.com/Mia0311/SCAV/assets/92045687/a31398f1-7506-4690-9e8e-2890319fdd45)
+![image](https://github.com/Mia0311/SCAV/assets/92045687/8b83165e-39d3-4151-96b5-7a73994c269e)
+![image](https://github.com/Mia0311/SCAV/assets/92045687/106412d7-caa8-4b53-a355-6111befb6fe6)
+
 
 
