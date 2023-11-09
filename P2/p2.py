@@ -103,7 +103,7 @@ def main():
     output_video3 = "BBB_chroma_sub.mp4"
     chroma_subsampling(input_video, output_video3, 420)
 
-    print("########## Task 3 ##########")
+    print("########## Task 4 ##########")
     print_info(input_video)
 
 if __name__ == "__main__":
