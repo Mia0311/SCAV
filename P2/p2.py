@@ -1,5 +1,11 @@
 import subprocess
 import json
+import sys
+import os
+
+# change to the correct path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from P1.rgb_yuv import rgb_to_yuv
 
 # Task 1
 def mp4_to_mp2(input_file, output_file):
@@ -63,7 +69,6 @@ def chroma_subsampling(input_file, output_file, chroma_sub):
 
 #Task 4
 def print_info(input_file):
-    # ffprobe -v quiet -print_format json -show_format -select_streams v:0 -show_entries format=start_time,duration,size,bit_rate,probe_score,tags BBB_Original.mp4
     cmd = [
         "ffprobe",
         "-v", "quiet",
@@ -86,10 +91,7 @@ def main():
     input_video = "BBB_Original.mp4"
     output_video = "BBB.mp2"
 
-    # Convert video to MP2
     #mp4_to_mp2(input_video, output_video)
-
-    # Parse video info
     #video_info = parse_video_info(output_video)
     #if video_info:
      #   print("Video Information:")
@@ -105,6 +107,12 @@ def main():
 
     print("########## Task 4 ##########")
     print_info(input_video)
+
+    print("########## Task 5 ##########")
+    r, g, b = 255, 0, 0
+    y, u, v = rgb_to_yuv(r, g, b)
+    print(f"RGB: ({r}, {g}, {b})")
+    print(f"YUV: ({y}, {u}, {v})")
 
 if __name__ == "__main__":
     main()
